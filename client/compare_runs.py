@@ -5,7 +5,7 @@ assert os.getenv('WANDB_API_KEY'), 'You must set the WANDB_API_KEY environment v
 
 def get_baseline_run(entity='conan1024hao',
                  project='multilingual-dialogue-system',
-                 tag='tough-snow-40'):
+                 tag='baseline'):
     "Get the baseline run from the project using tags"
 
     api = wandb.Api()
@@ -16,7 +16,7 @@ def get_baseline_run(entity='conan1024hao',
 
 def compare_runs(entity='conan1024hao',
                  project='multilingual-dialogue-system',
-                 tag='tough-snow-40',
+                 tag='baseline',
                  run_id=None):
     "Compare the current run to the baseline run."
 
