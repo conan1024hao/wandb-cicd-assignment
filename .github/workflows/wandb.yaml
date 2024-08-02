@@ -10,6 +10,8 @@ jobs:
   ghapi-exercise:
     if: (github.event.issue.pull_request != null) && contains(github.event.comment.body, '/wandb')
     runs-on: ubuntu-latest
+    environment:
+      wandb
     steps:        
 
     - name: Get repo contents
