@@ -19,8 +19,7 @@ jobs:
 
     - name: install dependencies
       run: |
-        pip install ghapi wandb
-        pip install --upgrade wandb
+        pip install ghapi wandb[workspaces]
 
     - name: Parse value from the command
       id: get-runid-value
