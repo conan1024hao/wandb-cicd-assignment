@@ -1,6 +1,7 @@
 import os, wandb
 import wandb.apis.reports as wr
 
+
 assert os.getenv('WANDB_API_KEY'), 'You must set the WANDB_API_KEY environment variable'
 
 def get_baseline_run(entity='conan1024hao',
